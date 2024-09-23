@@ -23,7 +23,7 @@ void GraphicsWorld::run(){
     s.display();
 #endif // end of block to test Square
 #if 1 // Change 0 to 1 to test Rectangle
-    cout << "\nTesting Functions in class Rectangle:";
+    cout << "\nTesting Functions in class Rectangle:" <<endl;
     Rectangle a(5, 7, 12, 15, "RECTANGLE A");
     a.display();
     Rectangle b(16 , 7, 8, 9, "RECTANGLE B");
@@ -43,9 +43,11 @@ void GraphicsWorld::run(){
     << "Side a: 12\n" << "Side b: 15\n" << "Area: 180\n" << "Perimeter: 54\n" ;
     cout << "\nIf it doesn't there is a problem with your assignment operator.\n" << endl;
     rec2.display();
+    
     cout << "\nTesting copy constructor in class Rectangle:" <<endl;
     Rectangle rec3 (a);
     rec3.display();
+    
     a.set_side_b(300);
     a.set_side_a(400);
     cout << "\nExpected to display the following values for objec rec2: " << endl;
